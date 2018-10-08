@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Park quiz</title>
+<style>
+body {
+background-image: url(bg.JPG);
+font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+#main {
+width: 80%;
+max-width: 1450px;
+margin: auto;
+padding: 10px;
+background: rgba(255, 255, 255, 0.59);
+border-radius: 10px;
+}
+
+
+	
+h1{
+	margin-top: 160px;
+	color: white;
+	font-size: 55px;
+}	
+	
+@media only screen and (max-width: 1000px) {
+	#header {
+		height: 100px;
+		}
+	h1{
+		margin-top: 30px;
+		font-size: 30px;
+	}
+	h2{
+		font-size: 15px;
+	}
+	h3{
+		font-size: 10px;
+	}
+	
+	#main{
+		width 100%
+	}
+	}
+	
+#header {
+text-align: center;	
+margin-top: 0px;
+padding: 10px;
+background-image: url("header.JPG");	
+background-size: 100%;
+}	
+	
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+color: forestgreen;
+padding-top: 20px;	
+}
+
+h3{
+color: forestgreen;		
+}	
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+table input[type=radio] {
+  display: none;
+}
+
+	table img{
+		width: 90%;
+	}	
+	
+input:checked + label img {
+  border:3px solid green;
+}	
+	
+table{
+}	
+	
+</style>
+
+
+</head>
+<body>
+<div id="main">
+<div id="header">
+<h1>Do you know your Parks?</h1>
+</div>
+<form id="form1">
+
+	
+
+<h2>How many parks are there in Texas?</h2>
+<label for="amt_medl"><input type="radio" name="amt" value="0" id="amt_medl" />45</label>
+<label for="amt_corr"><input type="radio" name="amt" value="1" id="amt_corr" />103</label>
+<label for="amt_med"><input type="radio" name="amt" value="0" id="amt_med" />51</label>
+<label for="amt_low"><input type="radio" name="amt" value="0" id="amt_low"/>29</label>
+
+<h2>Which park is the largest in Texas?</h2>
+<label for="big_bend"><input type="radio" name="big" value="1" id="big_bend"/>Big Bend Ranch State Park.</label>
+<label for="big_rock"><input type="radio" name="big" value="0" id="big_rock"/>Enchanted Rock.</label>
+<label for="big_spring"><input type="radio" name="big" value="0" id="big_spring" />Big Spring State Park.</label>
+<label for="big_col"><input type="radio" name="big" value="0" id="big_col" />Colorado Bend State Park.</label>
+
+<h2>Which Texas State Park is visited most often?</h2>
+<label for="vis_rock"><input type="radio" name="vis" value="0" id="vis_rock" />Enchanted Rock.</label>
+<label for="vis_garner"><input type="radio" name="vis" value="1" id="vis_garner" />Garner State Park.</label>
+<label for="vis_palo"><input type="radio" name="vis" value="0" id="vis_palo" />Palo Duro State Park</label>
+<label for="vis_fal"><input type="radio" name="vis" value="0" id="vis_fal" />McKinney Falls State Park.</label>
+
+
+<h2>Which of these parks is not in Texas</h2>
+<label for="tx_eis"><input type="radio" name="tx" value="0" id="tx_eis" />Eisenhower State Park.</label>
+<label for="tx_dino"><input type="radio" name="tx" value="0" id="tx_dino" />Dinosaur Valley State Park.</label>
+<label for="tx_falc"><input type="radio" name="tx" value="0" id="tx_falc" />Falcon State Park.</label>
+<label for="tx_ita"><input type="radio" name="tx"  value="1" id="tx_ita" />Itasca State Park.</label>
+	
+	
+<h2>Devil's Sinkhole State Natural Area is known for which of these animals?</h2>
+<table>	
+	<tr>
+	<td>
+   <input name="bat" value="1" type="radio" id="one">
+    <label for="one">
+      <img src="bat.png">
+    </label>
+	</td>
+ 
+	<td>
+    <input name="bat" value="0" type="radio" id="two">
+    <label for="two">
+      <img src="butterfly.png">
+    </label>
+	</td>
+	
+	<td>
+    <input name="bat" value="0" type="radio" id="three">
+    <label for="three">
+      <img src="bee.png">
+    </label>
+	</td>
+	
+	
+	<td>
+    <input name="bat" value="0"  type="radio" id="four">
+    <label for="four">
+      <img src="turtle.png">
+    </label>
+	</td>
+	</tr>
+</table>	
+	
+	
+<h2>Which of these is Colorado Bend State Park?</h2>
+<table>	
+	<tr>
+	<td>
+   <input name="col" value="0" type="radio" id="five">
+    <label for="five">
+      <img src="honey.png">
+    </label>
+	</td>
+ 
+	<td>
+    <input name="col" value="0" type="radio" id="six">
+    <label for="six">
+      <img src="inks.png">
+    </label>
+	</td>
+	
+	<td>
+    <input name="col" value="1" type="radio" id="seven">
+    <label for="seven">
+      <img src="colr.png">
+    </label>
+	</td>
+	
+	
+	<td>
+    <input name="col" value="0"  type="radio" id="eight">
+    <label for="eight">
+      <img src="brb.png">
+    </label>
+	</td>
+	</tr>
+</table>	
+	
+<h2>Which of these is Inks Lake State Park?</h2>
+<table>	
+	<tr>
+	<td>
+   <input name="inks" value="0" type="radio" id="nine">
+    <label for="nine">
+      <img src="honey.png">
+    </label>
+	</td>
+ 
+	<td>
+    <input name="inks" value="1" type="radio" id="ten">
+    <label for="ten">
+      <img src="inks.png">
+    </label>
+	</td>
+	
+	<td>
+    <input name="inks" value="0" type="radio" id="eleven">
+    <label for="eleven">
+      <img src="colr.png">
+    </label>
+	</td>
+	
+	
+	<td>
+    <input name="inks" value="0"  type="radio" id="twelve">
+    <label for="twelve">
+      <img src="brb.png">
+    </label>
+	</td>
+	</tr>
+</table>	
+
+	
+<button type="submit" value="Submit">Submit</button>
+
+</form>
+    
+<p>You got: <span id="grade">__</span> out of 7</p>
+<p id="grade2"></p>
+
+
+
+<script>
+	   document.getElementById("form1").onsubmit=function() {
+	   	
+	
+if(document.querySelector('input[name = "amt"]:checked') &&  document.querySelector('input[name = "big"]:checked') && document.querySelector('input[name = "vis"]:checked') && document.querySelector('input[name = "tx"]:checked') && document.querySelector('input[name = "bat"]:checked') && document.querySelector('input[name = "col"]:checked') && document.querySelector('input[name = "inks"]:checked')){
+	
+document.getElementById("form1").onsubmit=function() {
+       amt = parseInt(document.querySelector('input[name = "amt"]:checked').value);
+	   big = parseInt(document.querySelector('input[name = "big"]:checked').value);
+	   vis = parseInt(document.querySelector('input[name = "vis"]:checked').value);
+	   tx = parseInt(document.querySelector('input[name = "tx"]:checked').value);
+	   bat = parseInt(document.querySelector('input[name = "bat"]:checked').value);	
+	   col = parseInt(document.querySelector('input[name = "col"]:checked').value);
+	   inks = parseInt(document.querySelector('input[name = "inks"]:checked').value);	
+	   
+	if (amt !== 1 && amt !== 0 ) {
+alert("Fill out all questions before submitting.");
+}	
+	
+	   result = amt + big + vis + tx + bat + col + inks;
+	   
+	document.getElementById("grade").innerHTML = result;
+
+ grading = [
+	   {score:0,feedback:"You can visit https://tpwd.texas.gov/ to learn more about Texas Parks"},
+	   {score:1,feedback:"You got one right, keep working at it."},	 
+	   {score:2,feedback:"You're getting there, but keep reading up on Texas Parks."},
+	   {score:3,feedback:"You know a thing or two about Texas Parks."},
+	   {score:4,feedback:"Not bad, but you missed a few."},
+	   {score:5,feedback:"You know a lot about parks, but keep trying."},	
+	   {score:6,feedback:"Almost got it, you only missed one."},	
+	   {score:7,feedback:"Great Job! You really know your parks."},	 
+	   ];
+
+
+	
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+    result2 = grading[i].feedback + "<br /><img src='" +  "' width='300'  />";
+	  }
+
+	  }
+}
+
+document.getElementById("grade2").innerHTML = result2; 
+	
+}
+	
+else {
+alert("Fill out all questions before submitting.");
+}
+	
+
+	
+
+	
+return false;
+	   }
+ 
+
+</script>
+
+<p>Park images courtesy of the <a href="https://tpwd.texas.gov/">Texas Parks and Wildlife Department</a> </p>	
+
+</div>
+</body>
+</html>
